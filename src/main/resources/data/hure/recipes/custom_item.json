@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "WWW",
+      "WRR",
+      "WWW"
+    ],
+    "key": {
+      "W": {
+        "item": "hure:hure_cannon"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "hure:hure_cannon",
+      "count": 10
+    }
+  }
