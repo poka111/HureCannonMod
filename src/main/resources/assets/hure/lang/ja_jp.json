@@ -6,5 +6,6 @@
     "item.hure.hure_pickaxe": "フレイシェルピッケル",
     "item.hure.hure_shovel": "フレイシェルシャベル",
     "category.hure": "フレイシェルキャノンMOD",
-    "key.hure": "フレイシェルスキルを発動する"
+    "key.hure": "フレイシェルスキルを発動する",
+    "effect.hure.exp":"フレイシェルモード"
 }

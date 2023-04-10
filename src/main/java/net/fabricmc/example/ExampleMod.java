@@ -26,6 +26,7 @@ import net.minecraft.client.gui.*;
 import net.minecraft.client.util.math.*;
 import net.minecraft.entity.*;
 import net.minecraft.entity.decoration.*;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.projectile.*;
 import net.minecraft.text.*;
 import net.minecraft.util.hit.*;
@@ -55,10 +56,12 @@ public class ExampleMod implements ModInitializer{
 	private static final ItemGroup ITEM_GROUP = FabricItemGroup.builder(new Identifier("hure", "hure_group")).icon(() -> new ItemStack(CUSTOM_ITEM)).build();
 
 	public static String MOD_ID = "huremod";
+	public static final StatusEffect EXP = new CustomEffect();
 
 	@Override
 	public void onInitialize() {
 		keyBindings.init();
+		Registry.register(Registries.STATUS_EFFECT, new Identifier("hure","exp"), EXP);
 		Registry.register(Registries.ITEM, new Identifier("hure", "hure_cannon"), CUSTOM_ITEM);
 		Registry.register(Registries.ITEM, new Identifier("hure", "hure_sword"), HURE_SWORD);
 		Registry.register(Registries.ITEM, new Identifier("hure", "hure_shovel"), HURE_SHOVEL);

@@ -21,8 +21,8 @@ public class CustomItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        for(double i=0; i < 50; i++){
-        double distance = 5.0+i;
+        for(double i=0; i < 30; i++){
+        double distance = 5.0+3*i;
         Vec3d lookDirection = playerEntity.getRotationVector();
         double x = playerEntity.getX() + lookDirection.getX() * distance;
         double y = playerEntity.getY() + lookDirection.getY() * distance;
